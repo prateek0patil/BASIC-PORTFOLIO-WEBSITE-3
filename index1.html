@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> Prateek Patil</title>
+
+<head>
+<!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/x-icon" href="https://e1.pngegg.com/pngimages/517/96/png-clipart-dots-orange-and-white-p-logo.png" />
+
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+<!-- Including the bootstrap CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- CSS File connection -->  
+
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+<!-- -Font Awesome 4 cnd connection -->  
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Home page</title>
+</head>
+<body>
+
+
+
+<section id="nav-bar">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" width="170px"></a>
+    <!-- ---------------------------------------------------------------------------------------- --> 
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+    <!-- ---------------------------------------------------------------------------------------- --> 
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+       <!-- NavBar['ml-auto" is used to mov the nav bar items to rightside] -->
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#top"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about"><b>About</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects"><b>Projects</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Resume"><b>Skills</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume2"><b>Resume</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer"><b>Contacts</b></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<!------------------------- header section ends --------------------------------->
+
+<!------------------------------------ home section starts --------------------------- -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h1><b>HELLO!</b></h1>
+        <h3><b>THIS IS PRATEEK PATIL. </b></h3>
+        <p>Front End Developer || Aspiring Web Developer. </p>
+        <p></p>
+        
+        <form action="mailto: prateekpatil192@gmail.com" >
+          
+        <button type="submit" value="Send Email" class="btn"><p style="color: #ff6781"><b> Contact Me </b></p></button>
+       </form>
+
+    </div>
+
+    <div class="image">
+        <img src="prtk.jpg"  alt="">
+    </div>
+
+</section>
+
+<!--------------------------------------- home section ends --------------------------------->
+
+<!------------------------------------- about section starts  ----------------------------->
+          <br><br><br><br>
+
+
+
+
+<section class="about" id="about">
+    
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h1 class="heading"><b><span>ABOUT</span> ME </b></h1>
+        <br><br>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="prtk.jpg" width = "85%" height = "200" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3> Prateek Patil || Front End Developer || Computer Science and Engineering || Global Academy of Technology || Bangalore.</h3>
+          <p class="fst-italic">
+            <p> I am Prateek Patil, a final-year Computer Science and Engineering student at Global Academy of Technology. Proficient in web development, machine learning, and deep learning, I've successfully delivered projects like a robust E-Commerce Website and an engaging Restaurant Website. My IPL Win Prediction model showcases analytical and predictive skills. A Portfolio Website reflects my commitment to visual appeal and interactivity. As I conclude my academic journey, I seek opportunities to apply my skills in a professional setting. With a solid foundation in software development and data analysis, I am eager to contribute to innovative projects. Contact me for further discussions; I'm prepared to bring my passion, skills, and academic background to your team.
+             </p>
+          </p>
+          <br>
+         </div>
+      </div>
+
+    </div>
+
+    <!-- End About Me -->
+
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+   
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+    <!-- ======= Skills  ======= -->
+    
+
+        
+
+
+
+
+
+
+
+
+
+<section class="speciality" id="projects">
+
+    <h1 class="heading"><b> <span>PROJECTS | </span> MY WORK</b></h1>
+
+    <div class="box-container">
+
+
+        <div class="box">
+          <a href="https://github.com/shraddhatiwarii/Netflixhomepage">
+        <img class="image" src="https://technicallyautonomous.com/wp-content/uploads/2021/05/Screen-Shot-2021-05-08-at-5.56.52-PM-1024x624.jpg"  alt="">
+        <div class="content">
+            <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png" width="220px">
+            <h3> Amazon Clone</h3>
+            <p> I tried designing Home Page of amazon using my web development skills. It was an application of my learning. it is a responsive website. I used HTML, CSS AND JAVASCRIPT</p>
+        </div>
+      </a>
+    </div>
+
+        <div class="box">
+          <a href="https://github.com/prateek0patil">
+        <img class="image" src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/Netflixhomepageimage.png?raw=true"  alt="">
+        <div class="content">
+            <img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/netflix.png?raw=true" width="220px">
+            <h3> Netflix Home Page</h3>
+            <p> I tried designing Home Page of netflix using my web development skills. It was an application of my learning. it is a responsive website. I used HTML, CSS AND JAVASCRIPT</p>
+        </div>
+      </a>
+    </div>
+
+
+ 
+
+    <div class="box">
+        <a href="https://github.com/prateek0patil">
+      <img class="image" src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/07/flipkart-website-1595935120.jpg"  alt="">
+      <div class="content">
+          <img src="https://storiesflistgv2.blob.core.windows.net/stories/2019/03/article_banner_press_release_26_03_19_v1-01.jpg" width="220px">
+          <h3> Flipkart Home Page</h3>
+          <p> I tried designing Home Page of flipkart using my web development skills. It was an application of my learning. it is a responsive website. I used HTML, CSS AND JAVASCRIPT</p>
+      </div>
+    </a>
+  </div>
+
+
+        <div class="box">
+        <a href="https://github.com/prateek0patil">
+        <img class="image" src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/unitconverterimage.png?raw=true"  alt="">
+        <div class="content">
+            <img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/unit.png?raw=true" width="150px">
+            <h3> It is unit converter website. </h3>
+            <p> It is fully responsive website designed using HTML, CSS AND JAVASCRIPT, which convers length, area and temperature from one unit to another</p>
+        </div>
+      </a>
+    </div>
+        
+    <div class="box">
+      <a href="https://github.com.com/prateek0patil">
+      <img class="image" src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/graphic.png?raw=true"  alt="">
+      <div class="content">
+          <img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/graphicdesigningimage.jpg?raw=true" width="150px">
+          <h3> Graphic Designing Projects </h3>
+          <p> These are some of my works/project as Graphic Designer.</p>
+      </div>
+    </a>
+  </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+ <section id="Resume" class="resume">
+    <div class="container">
+
+      <h1 class="heading"><b> <span> SKILLS </span></b></h1>
+
+      <form class="box"  method="post">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title"> Here is the list of the skills I am confident about:</h3>
+          <div>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Machine Learning</li>
+                    <li>Python</li>
+                    </ul>
+                </td>
+
+                <td>
+                  <ul>
+                  <li>Java</li>
+                  <li>Cloud Computing</li>
+                  <li>Data Science</li>
+                  <li>Big Data</li>
+                </ul>
+                </td>
+              </tr>
+            </table>
+            
+
+          </div>
+      </div>
+      
+
+    </div>
+
+</form>
+
+<section id="Resume" class="resume">
+  <div class="container">
+
+    <h1 class="heading"><b> <span> INTERNSHIPS </span></b></h1>
+
+    <form class="box"  method="post">
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="resume-title"> Here is the list of the Internships that I have done:</h3>
+        <div>
+          <table>
+            <tr>
+              <td>
+                <ul>
+                  <li>Code Clause</li>
+                  <li>Code Soft</li>
+                  <li>Skill Intern India</li>
+                  <li>Coding Samurai</li>
+                  <li>Prodigy InfoTech</li>
+                  </ul>
+              </td>
+
+              <td>
+                <ul>
+                <li>Oasis Infobyte</li>
+                <li>InfoAid Tech</li>
+                <li>The Sparkle Foundation</li>
+                <li>Suvidha Foundation</li>
+              </ul>
+              </td>
+            </tr>
+          </table>
+          
+
+        </div>
+    </div>
+    
+
+  </div>
+
+</form>
+
+  </section><!-- End Resume Section -->
+
+  <section id="resume2" class="resume">
+    <div class="container">
+
+      <h1 class="heading"><b> <span> MY RESUME </span></b></h1>
+
+      <form class="box"  method="post">
+
+      <div class="row">
+        <div>
+          <h3 class="resume-title">Here is the link to download my resume</h3>
+          <div>
+           <a href="RESUME PRTK.pdf"> 
+            <button type="button" class="btn"><b> Download my Resume </b></button>
+           </a>
+
+          </div>
+      </div>
+
+    </div>
+
+</form>
+
+  </section><!-- End Resume Section -->
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------testimonial -----------------------------
+<section class="testimonial" id="testimonial">
+     <h1 class="heading"><b> Our <span> Customers Reviews</span> </b></h1>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-1">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!s</p>
+                <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                <img src="F:\E Commerce WebPage\image/user-2.jpg">
+                <h3>Akash Saha</h3>
+            </div>
+                <div class="col-1">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>
+                <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                <img src="F:\E Commerce WebPage\image/user-2.jpg">
+                <h3>Rishabh Singh</h3>
+            </div>
+                
+        </div>
+        
+    </div>
+    
+</section>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------- Social Media Section--------------------------------------------- -->
+
+
+<div id="social-media">
+  <div class="container text-center">
+    <h1 class="heading"><b>FIND ME <span>On SOCIAL MEDIA</span></b></h1>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/prateek-patil-a95441258/"><img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/linkedin.png?raw=true"></a>
+        <a href="https://www.instagram.com"><img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/instagram-icon.png?raw=true"></a>
+        <a href="https://wa.me/8971990179"><img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/whatsapp-icon.png?raw=true"></a>
+        
+        
+      </div>
+  </div>
+  
+</div>
+<!-- -------------------------------- footer Section--------------------------------------------- -->
+<div id="footer">
+  <img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/wave2.png?raw=true" class="footer-img">
+  <div class="container">
+    <div class="row">
+
+      <!-- ---------------------------------------------------------------------------------------- --> 
+      <div class="col-md-4 footer-box">
+        <img src="https://fdmr.icu/image/png/p/prateek.png">
+        <p>Portfolio Website | Created By PRATEEK PATIL using HTML,CSS,Javascript and Bootstrap | Full Responsive</p>
+        
+        <div class="footer1">
+        <p>Others Social Link</p>
+       <a href="https://github.com/prateek0patil"> <img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/git.png?raw=true"></a>
+       <a href="https://www.linkedin.com/in/prateek-patil-a95441258/"> <img src="https://github.com/shraddhatiwarii/PortfolioWebsite/blob/main/linkedin.png?raw=true"></a>
+        </div>
+
+      </div>
+      <!-- ---------------------------------------------------------------------------------------- --> 
+      <div class="col-md-4 footer-box">
+       <p><b>CONTACTS</b></p>
+       <p><i class="fas fa-map-marker-alt"></i></i>Global Boys Hostel, Bangalore</p>
+       <h6><i class="fas fa-envelope"></i>
+        <style type="text/css">
+          h6{
+       text-transform: lowercase;
+       font-size: 15px;
+     }
+       </style>
+          prateekpatil192@gmail.com
+     </h6>
+      </div>
+      <!-- ---------------------------------------------------------------------------------------- --> 
+      <div class="col-md-4 footer-box">
+       <p><b>Contact Me</b></p>
+
+
+    <form action="mailto: prateekpatil192@gmail.com">
+
+      <input type="text" name="Name" class="form-control" placeholder="Name">
+      <input type="email" name="Email" class="form-control" placeholder="E-Mail">
+
+      <div class="Message">
+      <style type="text/css">
+        .Message input[type = "textarea"]{
+          width: 250px;
+          height: 50px;
+          border-radius: 10px;
+        }
+      </style>
+      <input type="textarea" class="form-control" placeholder="Message">
+      </div>
+
+      <button type="submit" value="Send Email" class="btn btn-primary"><p>Send<p></button>
+      </form>
+
+      </div>
+
+
+
+    </div>
+      <hr>
+      <p class="copywrite">Website Created By PRATEEK PATIL</p>
+
+  </div>
+</div>
+
+
+
+
+  <!-- -------------------------------- smooth scroll Section--------------------------------------------- -->
+
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
